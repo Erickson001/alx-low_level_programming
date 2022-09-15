@@ -1,22 +1,19 @@
-#iclude "main.h"
-
+#include "main.h"
 /**
- * main - print putchar
+ * main - print putcher
  * Return: always 0
  */
-
 int main(void)
 {
-	_putchar('_');
+	_putcher('_');
 	_putchar('p');
 	_putchar('u');
 	_putchar('t');
-	_putchar('c');
+	_putcher('c');
 	_putchar('h');
 	_putchar('a');
 	_putchar('r');
 	_putchar('\n');
-
 	return (0);
-
 }
+	
