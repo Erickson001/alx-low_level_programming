@@ -1,23 +1,11 @@
 #include "main.h"
-#include <stdio.h>
-
 /**
- * print_diagsums - Entry point
- *
- * @a: Input
- * @size: Input
- *
- * Return: Always 0
+ * set_string - sets the value of a pointer to a char
+ * @s: pointer to pointer
+ * @to: pointer char
  */
-void print_diagsums(int *a, int size)
+
+void set_string(char **s, char *to)
 {
-	int b, sum1 = 0, sum2 = 0;
-
-	for (b = 0; b < size; b++)
-	{
-		sum1 += a[(size + 1) * b];
-		sum2 += a[(size - 1) * (b + 1)];
-	}
-
-	printf("%d, %d\n", sum1, sum2);
+	*s = to;
 }
